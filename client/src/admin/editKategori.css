@@ -1,0 +1,85 @@
+.edit-data-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 2% 2% 3% 2%;
+    border-radius: 10px;
+    height: auto;
+    /* box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25); */
+}
+
+.edit-data-container h1{
+    font-family: 'Poppins';
+    font-size: min(3vw, 20px);
+    font-weight: 400;
+}
+
+.edit-data-container input{
+    width: 50%;
+    height: auto;
+    padding: .2vw 1%;
+
+    font-size: max(10px, 1vw);
+}
+
+.edit-data-container textarea{
+    height: unset;
+    width: 98%;
+    padding: .2vw 1%;
+    font-size: max(10px, 1vw);
+}
+
+.container-row{
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    padding: 10px 10px;
+    overflow-x: scroll;
+}
+
+
+.edit-data-container .row{
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.data-img-check{
+    background-color: black;
+    width: 20vw;
+    max-width: 300px;
+    min-width: 200px;
+    height: 20vw;
+    max-height: 300px;
+    min-height: 150px;
+    margin-left: .5vw;
+    margin-right: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+
+.section{
+    width: 30vw;
+}
+
+.data-row{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    overflow: scroll;
+    margin-right: 2vw;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-data-container .col{
+    align-items: center;
+}

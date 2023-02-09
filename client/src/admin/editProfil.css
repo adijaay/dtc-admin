@@ -1,0 +1,48 @@
+
+
+.profil-container h1{
+    color: black;
+    font-family: 'Poppins';
+    font-size: calc(20px + 1vw);
+}
+
+.profil-container textarea{
+    width: 90%;
+    font-size: calc(10px + 1vw);
+    padding: 1vw 2vw;
+}
+
+.profil-container .ql-container{
+    font-family: 'Poppins';
+}
+
+.profil-container .ql-container.ql-snow{
+    z-index: 0;
+}
+
+.visimisi-container{
+    padding-top: 2vh;
+    width: 100%;
+}
+
+.flow{
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: 0;
+    /* flex-direction: column; */
+}
+
+.visimisi-container h1{
+    color: black;
+    font-family: 'Poppins';
+    font-size: calc(20px + 1vw);
+}
+
+.visimisi-container textarea{
+    width: 90%;
+    height: clamp(50px, 10vh, 10vw);
+    font-family: 'Poppins';
+    padding: 1vw 5%;
+    font-size: calc(10px + .5vw);
+}
+

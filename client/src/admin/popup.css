@@ -1,0 +1,93 @@
+.popup-box {
+    position: fixed;
+    background: #00000050;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+  }
+   
+  .box {
+    position: relative;
+    width: auto;
+    min-width: 250px;
+    margin: 0 0 0 0vw;
+    height: auto;
+    max-height: 80vh;
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px solid #999;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  
+
+  .box input{
+    width: 100%;
+    font-size: calc(10px + .5vw);
+  }
+   
+  .close-icon {
+    content: 'x';
+    cursor: pointer;
+    position: absolute;
+    right: calc(10px);
+    top: calc(10px);
+    background: #ededed;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #999;
+    font-size: 20px;
+  }
+
+  .box .row{
+    width: 90%;
+  }
+
+  .box .edit-office-container{
+    box-shadow: none;
+    margin-left: -3%;
+  }
+
+  .logo .row{
+    width: 100%;
+    gap: 15%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo .col{
+    width: 30%;
+    min-width: 250px;
+    margin-top: 5px;
+  }
+
+  .logo input{
+    width: 100%;
+  }
+
+  .logo label{
+    padding-left: .5vw;
+    margin: 1vh 0;
+  }
+
+  .logo form .submitbtn{
+    width: auto;
+    padding: 5px 2vw 15px 2vw;
+
+    position: absolute;
+    bottom: 1vw;
+    right: 50%;
+  }
+
+

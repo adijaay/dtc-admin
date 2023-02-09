@@ -1,0 +1,73 @@
+.border * {
+    box-sizing: border-box;
+  }
+  
+  .water {
+    position: relative;
+    padding: 20px 50px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 40px;
+  }
+  
+  .water span {
+    position: relative;
+    color: #fff;
+    fot-size: 20px;
+    font-family: 'Poppins';
+    letter-spacing: 18px;
+    z-index: 1;
+  }
+  
+  .water .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: #016CB8;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    transition: .5s;
+  }
+  
+  .water .liquid::after,
+  .water .liquid::before {
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #fff;
+  }
+  
+  .water .liquid::before {
+    
+    border-radius: 45%;
+    background: rgba(255, 255, 255, 1);
+    animation: animate 5s linear infinite;
+  }
+  
+  .water .liquid::after {
+    
+    border-radius: 40%;
+    background: rgba(255, 255, 255, 0.8);
+    animation: animate 10s linear infinite;
+  }
+  
+  .water:hover .liquid{
+    top: -120px;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -75%) rotate(360deg);
+    }
+  }

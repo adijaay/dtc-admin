@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import Axios from "axios";
+import url from "../config/link";
 
 const initialState = {
     user: null,
@@ -14,7 +15,7 @@ export const LoginUser = createAsyncThunk("user/LoginUser", async(user, thunkAPI
         // console.log(user.username);
         // console.log(user.password);
         // try{
-            const response = await Axios.put('http://192.168.6.235:3001/login', {
+            const response = await Axios.put(url + 'login', {
             username: user.username,
             password: user.password
         });
@@ -34,7 +35,7 @@ export const getMe = createAsyncThunk("user/getMe", async(_, thunkAPI) => {
     try {
         // console.log("jalan")
         // try{
-            const response = await Axios.put('http://192.168.6.235:3001/me');
+            const response = await Axios.put(url + 'me');
             return response.data;
         // } catch {
         //     return thunkAPI.rejectWithValue("Harap Login");
@@ -52,7 +53,7 @@ export const getMe = createAsyncThunk("user/getMe", async(_, thunkAPI) => {
 });
 
 export const LogOut = createAsyncThunk("user/LogOut", async() => {
-    await Axios.delete('http://192.168.6.235:3001/logout');
+    await Axios.delete(url +'logout');
 });
 
 export const authSlice = createSlice({

@@ -47,7 +47,7 @@ export default function Office() {
   const [selectedPage, setSelectedPage] = useState(0);
   const [pagetotal, setPagetotal] = useState(0);
   const [offset, setOffset] = useState(0);
-  const limit = 5;
+  const limit = 7;
   const handlepage = async (e) => {
     let selected = e.selected;
     setSelectedPage(selected);

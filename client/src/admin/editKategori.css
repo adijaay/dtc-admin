@@ -49,11 +49,8 @@
 
 .data-img-check{
     background-color: black;
-    width: 20vw;
-    max-width: 300px;
-    min-width: 200px;
-    height: 20vw;
-    max-height: 300px;
+    width: clamp(100px, 50vw, 25vh);
+    height: clamp(100px, 20vh, 20vw);
     min-height: 150px;
     margin-left: .5vw;
     margin-right: 3vw;

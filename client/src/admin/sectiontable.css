@@ -31,7 +31,7 @@ td{
 }
 
 .table-img{
-    min-width: 20px;
+    min-width: 50px;
     max-width: 2px;
     padding: 0px;
     margin-right: 2px;
@@ -47,6 +47,8 @@ td{
 
 .table-center{
     /* height: 100%; */
+    /* width: 50%;
+    height: 10px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

@@ -69,7 +69,7 @@ const SectionTable = (props) => {
 
   const [selectedPage, setSelectedPage] = useState(0);
   const [offset, setOffset] = useState(0);
-  const limit = 5;
+  const limit = 10;
   const handlepage = async (e) => {
     let selected = e.selected;
     setSelectedPage(selected);
@@ -293,7 +293,7 @@ const SectionTable = (props) => {
                           //   backgroundPosition: "50% 50%",
                           //   backgroundSize: "contain",
                           width: "50%",
-                          height: "clamp(20px, 10vh, 10vw)",
+                          height: "clamp(40px, 5vh, 8vw)",
                           //   backgroundRepeat: "no-repeat",
                           margin: "5% 25%",
                         }}
